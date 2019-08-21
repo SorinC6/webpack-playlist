@@ -1,27 +1,16 @@
-var path = require('path');
+const path = require("path");
+
+const entryPoint = "src/script-1.js";
+const outputPoint = "dist";
 
 module.exports = {
+  mode: "development",
+  //define entry point
+  entry: path.resolve(__dirname, entryPoint),
 
-    entry: path.resolve(__dirname, 'src') + '/app/index.js',
-    output: {
-        path: path.resolve(__dirname, 'dist') + '/app',
-        filename: 'bundle.js',
-        publicPath: '/app/'
-    },
-    module: {
-        rules: [
-            {
-                test: /\.js$/,
-                include: path.resolve(__dirname, 'src'),
-                loader: 'babel-loader',
-                query: {
-                    presets: ['react', 'es2015']
-                }
-            },
-            {
-                test: /\.css$/,
-                loader: 'style-loader!css-loader'
-            }
-        ]
-    }
+  //define output
+  output: {
+    path: path.resolve(__dirname, outputPoint),
+    filename: "bundle.js"
+  }
 };

@@ -2,15 +2,18 @@
   "name": "webpack-react",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "jquery": "^3.4.1",
+    "webpack": "^4.39.2"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.3.7"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
-    "webpack": "^4.39.2"
-  }
+  "license": "ISC"
 }
