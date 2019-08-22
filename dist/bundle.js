@@ -93,7 +93,7 @@
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("let message = __webpack_require__(/*! ./script-2 */ \"./src/script-2.js\").default;\nalert(message);\n\n\n//# sourceURL=webpack:///./src/script-1.js?");
+eval("let message = __webpack_require__(/*! ./script-2 */ \"./src/script-2.js\");\n\nalert(message);\n\n//# sourceURL=webpack:///./src/script-1.js?");
 
 /***/ }),
 
@@ -104,7 +104,7 @@ eval("let message = __webpack_require__(/*! ./script-2 */ \"./src/script-2.js\")
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("module.exports = \"Hellow from Script2\";\n\n\n//# sourceURL=webpack:///./src/script-2.js?");
+eval("module.exports = \"Hellow from Script2\";\n\n//# sourceURL=webpack:///./src/script-2.js?");
 
 /***/ })
 
