@@ -1,0 +1,13 @@
+$maincolor: darkblue;
+
+.intro-component {
+  padding: 15px;
+  background: $maincolor;
+  color: white;
+  h1 {
+    text-transform: uppercase;
+  }
+  ul {
+    color: lightpink;
+  }
+}

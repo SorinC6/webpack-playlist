@@ -86,14 +86,14 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./src/css/IntroCss.css":
-/*!********************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./src/css/IntroCss.css ***!
-  \********************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/IntroScss.scss":
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/IntroScss.scss ***!
+  \*************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".intro-component {\\n  padding: 15px;\\n  background: darkred;\\n  color: white;\\n}\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/IntroCss.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".intro-component {\\n  padding: 15px;\\n  background: darkblue;\\n  color: white; }\\n  .intro-component h1 {\\n    text-transform: uppercase; }\\n  .intro-component ul {\\n    color: lightpink; }\\n\", \"\"]);\n\n\n//# sourceURL=webpack:///./src/css/IntroScss.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js");
 
 /***/ }),
 
@@ -121,14 +121,14 @@ eval("\n\nvar stylesInDom = {};\n\nvar isOldIE = function isOldIE() {\n  var mem
 
 /***/ }),
 
-/***/ "./src/css/IntroCss.css":
-/*!******************************!*\
-  !*** ./src/css/IntroCss.css ***!
-  \******************************/
+/***/ "./src/css/IntroScss.scss":
+/*!********************************!*\
+  !*** ./src/css/IntroScss.scss ***!
+  \********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!./IntroCss.css */ \"./node_modules/css-loader/dist/cjs.js!./src/css/IntroCss.css\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/css/IntroCss.css?");
+eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./IntroScss.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/IntroScss.scss\");\n\nif (typeof content === 'string') {\n  content = [[module.i, content, '']];\n}\n\nvar options = {}\n\noptions.insert = \"head\";\noptions.singleton = false;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ \"./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js\")(content, options);\n\nif (content.locals) {\n  module.exports = content.locals;\n}\n\n\n//# sourceURL=webpack:///./src/css/IntroScss.scss?");
 
 /***/ }),
 
@@ -139,7 +139,7 @@ eval("var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("let message = __webpack_require__(/*! ./script-2 */ \"./src/script-2.js\"); //alert(message);\n\n\n__webpack_require__(/*! ./css/IntroCss.css */ \"./src/css/IntroCss.css\");\n\n//# sourceURL=webpack:///./src/script-1.js?");
+eval("let message = __webpack_require__(/*! ./script-2 */ \"./src/script-2.js\"); //alert(message);\n//require(\"./css/IntroCss.css\");\n\n\n__webpack_require__(/*! ./css/IntroScss.scss */ \"./src/css/IntroScss.scss\");\n\n//# sourceURL=webpack:///./src/script-1.js?");
 
 /***/ }),
 
